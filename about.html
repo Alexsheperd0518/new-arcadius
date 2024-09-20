@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- icon link 1 -->
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+	
+	<!-- icon link 2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+	
+	<!-- w3-css file link -->
+	<link rel="stylesheet" type="text/css" href="w3-css.css">
+
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<!-- Logo and Navigation Bar -->
+	<div class="w3-row w3-black">
+
+		<!-- Logo Section -->
+		<div class="w3-col s6 m4 l4 w3-left">
+			<div class="w3-xxlarge font">
+				<a href="index.html"><img class="w3-circle" src="images/logo.gif" height="50px"></a>
+				<span class="main-heading">Arcadius</span>
+			</div>
+		</div>
+
+		<!-- Navigation Bar for Larger Screens -->
+		<div class="w3-col s12 m8 l8 w3-hide-small w3-right" style="margin-top: 10px">
+			<nav class="w3-container w3-right" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+				<div class="w3-dropdown-hover">
+					<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+					<div class="w3-dropdown-content w3-bar-block">
+						<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+						<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+					</div>
+				</div>
+				
+				<a href="popular-games.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></button></a>
+				<a href="contact.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></button></a>
+				<a href="about.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>About</b></button></a>
+				<a href="login.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Login</b></button></a>
+			</nav>
+		</div>
+
+		<!-- Hamburger Icon for Small Screens -->
+		<div class="w3-col s6 w3-hide-large w3-hide-medium w3-right">
+			<button class="w3-button w3-right w3-hover-black" onclick="toggleMenu()">
+				&#9776;
+			</button>
+		</div>
+
+		<!-- Dropdown Menu for Small Screens -->
+		<div id="smallNav" class="w3-col s12 w3-hide w3-hide-medium w3-hide-large">
+			<div class="w3-dropdown-hover ">
+				<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+				<div class="w3-dropdown-content w3-bar-block">
+					<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+					<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+				</div>
+			</div>
+			
+			<a href="popular-games.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></a>
+			<a href="contact.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></a>
+			<a href="about.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>About</b></a>
+			<a href="login.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Login</b></a>
+		</div>
+	</div>
+	
+	<!-- JavaScript to Toggle Dropdown on Small Screens -->
+	<script>
+		function toggleMenu() 
+		{
+			var x = document.getElementById("smallNav");
+
+			if (x.className.indexOf("w3-show") == -1) 
+			{
+				x.className += " w3-show";
+			}
+
+			else 
+			{
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
+
+	<!-- About Us Content -->
+	<div style="margin: 26px 0px">
+		<div class="w3-justify w3-round-large w3-padding" style="background-color: rgba(255, 255, 255, 0.8); margin: auto; width: 55%;">
+			<h2 class="about-heading w3-center"><b>About us</b></h2>
+			<h5>
+				Hey everyone! I'm Dushyant, a web developer with a passion for creating amazing digital experiences, and I’m super excited to welcome you to <b>Arcadius</b>! 🎉 <br><br>
+
+				Arcadius is more than just a website; it’s a dynamic <b>content hub</b> designed to bring together creators, gamers, and tech enthusiasts. My vision? To turn Arcadius into a thriving community where thousands of creators can <b>showcase their work</b>, share their innovations, and connect directly with their audience. <br><br>
+
+				Here, you’ll find the latest and greatest in gaming and software, with all content linked straight to the <b>official sites</b>, ensuring a safe, worry-free experience—no threats, just pure fun and exploration! <br><br>
+
+				We’re constantly keeping things fresh with updates on new releases in the gaming and tech world. Arcadius is on a journey to become your go-to destination for "digital creativity and innovation". So, stick around and watch as we grow together! <br><br>
+
+				Welcome to <b>Arcadius</b>, where digital dreams come to life! 🌟
+			</h5>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
+		<div class="w3-row w3-center">
+			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
+				<a href="#">Request us</a>
+			</div>
+
+			<div class="w3-col s9 m6">Follow us 
+				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
+				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
+				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
+				<a href="#" class="fa fa-pinterest w3-hover-red w3-round-large"></a>
+			</div>
+		</div>
+
+		<div class="w3-center" style="margin-top: 10px;">
+			Developed and Maintained by Alex | &#169;Copyright all rights reserved. <span id="year"></span>
+		</div>
+
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</footer>
+
+	<style>
+		/* Default font size and media icons for larger screens */
+		footer {font-size: 1rem;}
+		
+		footer .fa {font-size: 1.5rem; margin: 0 2px;}
+
+		/* Responsive font size for smaller screens */
+		@media (max-width: 768px) 
+		{
+			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
+		
+			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
+		}
+
+		@media (max-width: 480px) 
+		{
+			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
+
+			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
+		}
+	</style>
+	
+</body>
+</html>

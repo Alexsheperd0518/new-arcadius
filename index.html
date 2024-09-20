@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- icon link 1 -->
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+	
+	<!-- icon link 2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+	
+	<!-- w3-css file link -->
+	<link rel="stylesheet" type="text/css" href="w3-css.css">
+
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<!-- Logo and Navigation Bar -->
+	<div class="w3-row w3-black">
+
+		<!-- Logo Section -->
+		<div class="w3-col s6 m4 l4 w3-left">
+			<div class="w3-xxlarge font">
+				<a href="index.html"><img class="w3-circle" src="images/logo.gif" height="50px"></a>
+				<span class="main-heading">Arcadius</span>
+			</div>
+		</div>
+
+		<!-- Navigation Bar for Larger Screens -->
+		<div class="w3-col s12 m8 l8 w3-hide-small w3-right" style="margin-top: 10px">
+			<nav class="w3-container w3-right" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+				<div class="w3-dropdown-hover">
+					<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+					<div class="w3-dropdown-content w3-bar-block">
+						<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+						<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+					</div>
+				</div>
+				
+				<a href="popular-games.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></button></a>
+				<a href="contact.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></button></a>
+				<a href="about.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>About</b></button></a>
+				<a href="login.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Login</b></button></a>
+			</nav>
+		</div>
+
+		<!-- Hamburger Icon for Small Screens -->
+		<div class="w3-col s6 w3-hide-large w3-hide-medium w3-right">
+			<button class="w3-button w3-right w3-hover-black" onclick="toggleMenu()">
+				&#9776;
+			</button>
+		</div>
+
+		<!-- Dropdown Menu for Small Screens -->
+		<div id="smallNav" class="w3-col s12 w3-hide w3-hide-medium w3-hide-large">
+			<div class="w3-dropdown-hover ">
+				<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+				<div class="w3-dropdown-content w3-bar-block">
+					<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+					<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+				</div>
+			</div>
+			
+			<a href="popular-games.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></a>
+			<a href="contact.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></a>
+			<a href="about.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>About</b></a>
+			<a href="login.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Login</b></a>
+		</div>
+	</div>
+	
+	<!-- JavaScript to Toggle Dropdown on Small Screens -->
+	<script>
+		function toggleMenu() 
+		{
+			var x = document.getElementById("smallNav");
+
+			if (x.className.indexOf("w3-show") == -1) 
+			{
+				x.className += " w3-show";
+			}
+
+			else 
+			{
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
+
+
+
+
+	<!-- SlideShow -->
+	<section>
+		<div class="slide-container">
+			<a href="https://www.rockstargames.com/VI">
+				<img class="myslides mod1" src="images/imageslide/slide-1.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://www.playstation.com/en-in/games/the-last-of-us-part-ii-remastered/">
+				<img class="myslides mod1" src="images/imageslide/slide-2.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://www.rockstargames.com/VI">
+				<img class="myslides mod1" src="images/imageslide/slide-3.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-4.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-5.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-6.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-7.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-8.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-9.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-10.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-11.jpg">
+			</a>
+		</div>
+
+		<div class="slide-container">
+			<a href="https://store.steampowered.com/app/2344520/Diablo_IV/">
+				<img class="myslides mod1" src="images/imageslide/slide-12.jpg">
+			</a>
+		</div>
+
+	</section>
+
+	<!-- Slide Show JavaScript -->
+	<script>
+		var myIndex = 0;
+		slides();
+
+		function slides()
+		{
+			var i;
+			var x = document.getElementsByClassName("myslides");
+
+			for (i = 0; i < x.length; i++) 
+			{
+				x[i].classList.remove("active");
+			}
+
+			// Move to the next slide
+			myIndex++;
+			if (myIndex > x.length) 
+			{
+				myIndex = 1
+			} 
+
+			// Show the current slide with a fade-in effect
+			x[myIndex-1].classList.add("active"); 
+
+			// Set the timeout for the next slide change
+			setTimeout(slides, 3000); // Change image every 3 seconds
+		}
+	</script>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+	<div class="w3-row" style="margin-top: 5px;">
+	<!-- Left Content -->
+		<div class="w3-col m2 w3-ul w3-large w3-round-large" style="font-weight: 600; background-color: rgba(84, 158, 205, 0.692); height: 1970px">
+			<h3 class="w3-center" style="font-weight: 700;">Genres</h3>
+	
+			<a href="https://store.epicgames.com/en-US/c/action-games?sortBy=releaseDate&sortDir=DESC&count=40">
+			<li class="w3-hover-text-red">Action</li></a><br>
+
+			<a href="https://store.steampowered.com/tags/en/Adventure/" >
+			<li class="w3-hover-text-red">Adventure</li></a><br>
+
+			<a href="https://store.steampowered.com/category/arcade_rhythm/" >
+			<li class="w3-hover-text-red">Arcade</li></a><br>
+
+			<a href="https://store.steampowered.com/category/arcade_rhythm/" >
+			<li class="w3-hover-text-red">First Person</li></a><br>
+
+			<a href="https://store.steampowered.com/category/horror/" >
+			<li class="w3-hover-text-red">Horror</li></a><br>
+
+			<a href="https://store.steampowered.com/category/mystery_detective/" >
+			<li class="w3-hover-text-red">Mystery</li></a><br>
+
+			<a href="https://store.epicgames.com/en-US/c/racing-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">Racing</li></a><br>
+
+			<a href="https://store.epicgames.com/en-US/c/racing-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">RPG</li></a><br>
+
+			<a href="https://store.epicgames.com/en-US/c/shooter-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">Shooting</li></a><br>
+
+			<a href="https://store.epicgames.com/en-US/c/shooter-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">Simulation</li></a><br>
+
+			<a href="https://store.steampowered.com/category/survival/" >
+			<li class="w3-hover-text-red">Survival</li></a><br>
+
+			<a href="https://store.epicgames.com/en-US/c/strategy-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">Strategy</li></a><br>
+			
+			<a href="https://store.epicgames.com/en-US/c/shooter-games?sortBy=releaseDate&sortDir=DESC&count=40" >
+			<li class="w3-hover-text-red">Thriller</li></a><br>
+
+		</div>
+
+
+
+
+		<!-- Right Content -->
+		<div class="w3-col m10" style="padding-left: 25px; margin-top: -10px;">
+
+			<!-- Row 1 -->
+			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "right">New Release</marquee></h2>
+			<div class="w3-row w3-center">
+				<div class="w3-col s3 hover">
+					<a href="https://store.epicgames.com/en-US/p/world-war-z">
+						<div class="mod2">
+							<div class="margin-top">
+								<img class="image" src="images/new-1.jpg">
+							</div>
+
+							<div>
+								<p>Black Myth<br>Wukong</p>
+								<p>&#8377; 3,599/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.rockstargames.com/game/buy-grand-theft-auto-the-trilogy-the-definitive-edition?_gl=1*12jiy9e*_ga*MTc0NjM4ODQ1OC4xNjUwODg5MTAw*_ga_PJQ2JYZDQC*MTY1NDQzODMwMC42LjEuMTY1NDQzODk2NS4w" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/new-2.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Hogwarts<br>Legacy</p>
+								<p class="w3-text-white">&#8377; 1,199/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.epicgames.com/en-US/p/star-wars-jedi-fallen-order" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/new-3.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">NBA<br>2K25</p>
+								<p class="w3-text-white">&#8377; 3,999/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1137300/Sherlock_Holmes_Chapter_One/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/new-4.jpg">
+							</div>
+							<div>
+								<p class="w3-text-white">CarX<br>Street</p>
+								<p class="w3-text-white">&#8377; 1,600/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+
+
+			<!-- Row 2 -->
+			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "left">Most Played</marquee></h2>
+			<div class="w3-row w3-center">
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/pop-1.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">The Last Of Us<br>Part I</p>
+								<p class="w3-text-white">&#8377; 3,999/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://www.playstation.com/en-in/games/uncharted-the-lost-legacy/">
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/pop-2.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Uncharted<br>The Lost Legacy</p>
+								<p class="w3-text-white">&#8377; 1,799/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/">
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/pop-3.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Call Of Duty<br>Modern Warfare II</p>
+								<p class="w3-text-white">&#8377; 4,999/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/pop-4.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Grand Theft Auto<br>V</p>
+								<p class="w3-text-white">&#8377; 952/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+
+
+			<!-- Row 3 -->
+			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "right">Special Offers</marquee></h2>
+			<div class="w3-row w3-center">
+				<div class="w3-col s3">
+					<a href="https://www.microsoft.com/en-in/d/windows-10-pro/df77x4d43rkt?activetab=pivot%3aoverviewtab" >
+						<div class="hover w3-black mod2">
+							<div class="margin-top">
+								<img class="image" src="images/software1.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Windows 10 Pro</p>
+								<p class="w3-text-white">&#8377;16,515/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://www.quickheal.co.in/home-users/quick-heal-total-security/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/software2.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Quick Heal<br>Total Security</p>
+								<p class="w3-text-white">&#8377;1,909/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://www.microsoft.com/en-in/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?activetab=pivot:requirementstab" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/software3.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Mircosoft Office<br>365 Personal</p>
+								<p class="w3-text-white">&#8377;4,889/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/software4.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Wallpaper Engine</p>
+								<p class="w3-text-white">&#8377;229/-</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+
+
+			<!-- Row 4 -->
+			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "left">Free to Play</marquee></h2>
+			<div class="w3-row w3-center">
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/free-1.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Warframe</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1782210/Crab_Game/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/free-2.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Player Unknown's<br>Battlegorund</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1190340/SUPER_PEOPLE/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/free-3.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Apex Legends</p>		
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="w3-col s3">
+					<a href="https://store.steampowered.com/app/1992850/Cyrahs_Ascent/" >
+						<div class="hover mod2">
+							<div class="margin-top">
+								<img class="image" src="images/free-4.jpg">
+							</div>
+
+							<div>
+								<p class="w3-text-white">Cyrah Ascent</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- Footer -->
+	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
+		<div class="w3-row w3-center">
+			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
+				<a href="#">Request us</a>
+			</div>
+
+			<div class="w3-col s9 m6">Follow us 
+				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
+				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
+				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
+				<a href="#" class="fa fa-pinterest w3-hover-red w3-round-large"></a>
+			</div>
+		</div>
+
+		<div class="w3-center" style="margin-top: 10px;">
+			Developed and Maintained by Alex | &#169;Copyright all rights reserved. <span id="year"></span>
+		</div>
+
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</footer>
+
+	<style>
+		/* Default font size and media icons for larger screens */
+		footer {font-size: 1rem;}
+		
+		footer .fa {font-size: 1.5rem; margin: 0 2px;}
+
+		/* Responsive font size for smaller screens */
+		@media (max-width: 768px) 
+		{
+			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
+		
+			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
+		}
+
+		@media (max-width: 480px) 
+		{
+			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
+
+			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
+		}
+	</style>
+	
+</body>
+</html>

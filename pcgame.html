@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- icon link 1 -->
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+	
+	<!-- icon link 2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+	
+	<!-- w3-css file link -->
+	<link rel="stylesheet" type="text/css" href="w3-css.css">
+
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		.myslides {
+		  position: absolute;
+		  width: 100%;
+		  opacity: 0;  /* Start as transparent */
+		  transition: opacity 1s ease; /* Smooth fade effect */
+		}
+	  
+		.myslides.active {
+		  opacity: 1;  /* Fade in */
+		}
+	  </style>
+	  
+</head>
+<body>
+ 
+	<!-- Logo and Navigation Bar -->
+	<div class="w3-row w3-black">
+
+		<!-- Logo Section -->
+		<div class="w3-col s6 m4 l4 w3-left">
+			<div class="w3-xxlarge font">
+				<a href="index.html"><img class="w3-circle" src="images/logo.gif" height="50px"></a>
+				<span class="main-heading">Arcadius</span>
+			</div>
+		</div>
+
+		<!-- Navigation Bar for Larger Screens -->
+		<div class="w3-col s12 m8 l8 w3-hide-small w3-right" style="margin-top: 10px">
+			<nav class="w3-container w3-right" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+				<div class="w3-dropdown-hover">
+					<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+					<div class="w3-dropdown-content w3-bar-block">
+						<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+						<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+					</div>
+				</div>
+				
+				<a href="popular-games.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></button></a>
+				<a href="contact.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></button></a>
+				<a href="about.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>About</b></button></a>
+				<a href="login.html"><button class="w3-button w3-hover-black w3-hover-text-red"><b>Login</b></button></a>
+			</nav>
+		</div>
+
+		<!-- Hamburger Icon for Small Screens -->
+		<div class="w3-col s6 w3-hide-large w3-hide-medium w3-right">
+			<button class="w3-button w3-right w3-hover-black" onclick="toggleMenu()">
+				&#9776;
+			</button>
+		</div>
+
+		<!-- Dropdown Menu for Small Screens -->
+		<div id="smallNav" class="w3-col s12 w3-hide w3-hide-medium w3-hide-large">
+			<div class="w3-dropdown-hover ">
+				<button class="w3-button w3-black w3-hover-black w3-hover-text-red"><b>Games</b></button>
+				<div class="w3-dropdown-content w3-bar-block">
+					<a href="pcgame.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Pc</b></a>
+					<a href="playstation.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>PlayStation</b></a>
+				</div>
+			</div>
+			
+			<a href="popular-games.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Popular Games</b></a>
+			<a href="contact.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Contact</b></a>
+			<a href="about.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>About</b></a>
+			<a href="login.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-red"><b>Login</b></a>
+		</div>
+	</div>
+	
+	<!-- JavaScript to Toggle Dropdown on Small Screens -->
+	<script>
+		function toggleMenu() 
+		{
+			var x = document.getElementById("smallNav");
+
+			if (x.className.indexOf("w3-show") == -1) 
+			{
+				x.className += " w3-show";
+			}
+
+			else 
+			{
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
+
+
+
+
+	<!-- SlideShow -->
+	<section>
+
+		<a href="https://store.steampowered.com/app/1088850/Marvels_Guardians_of_the_Galaxy/" >
+		<img class="myslides adjust_image" src="images/pcgame/slides/slide-1.jpg"></a>
+
+		<a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">
+		<img class="myslides adjust_image" src="images/pcgame/slides/slide-2.jpg"></a>
+
+		<a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">
+		<img class="myslides adjust_image" src="images/pcgame/slides/slide-3.jpg"></a>
+
+		<a href="https://store.steampowered.com/app/204100/Max_Payne_3/">
+		<img class="myslides adjust_image" src="images/pcgame/slides/slide-4.jpg"></a>
+
+		<a href="https://store.steampowered.com/app/967050/Pacify/">
+		<img class="myslides adjust_image" src="images/pcgame/slides/slide-5.jpg"></a>
+
+	</section>
+
+	<!-- Slide Show JavaScript -->
+	<script>
+		var myIndex = 0;
+		slides();
+	
+		function slides() 
+		{
+			var i;
+			var x = document.getElementsByClassName("myslides");
+		
+			// Hide all slides by removing active class
+			for (i = 0; i < x.length; i++) 
+			{
+				x[i].classList.remove("active");
+			}
+		
+			// Move to the next slide
+			myIndex++;
+			if (myIndex > x.length) 
+			{
+				myIndex = 1;
+			}
+		
+			// Show the current slide with a fade-in effect
+			x[myIndex - 1].classList.add("active");
+		
+			// Set the timeout for the next slide change
+			setTimeout(slides, 3000); // Change image every 3 seconds
+		}
+	</script>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+	  
+
+	<!-- heading -->
+	<div class="w3-row" style="background-color: rgba(7, 7, 7, 0.943);">
+		<div class="w3-col s6 w3-xlarge w3-text-blue" style="font-weight: 700; margin-top: 8px; padding-left: 10px;">
+			Pc Games
+		</div>
+
+		<div class="w3-col s6" style="padding: 8px; margin-top: -15px; margin-bottom: -4px;">
+			<!-- intractive game search bar -->
+			<input type="text" id="searchBar" onkeyup="searchGames()" placeholder="search here" class="w3-right w3-input w3-margin-top w3-round" style="height:35px; width:300px;">
+			
+			<script>
+				function searchGames() 
+				{
+					var input, filter, cards, details, i, txtValue;
+					input = document.getElementById('searchBar');
+					filter = input.value.toUpperCase();
+					cards = document.getElementsByClassName('card2');
+					for (i = 0; i < cards.length; i++) 
+					{
+						details = cards[i].getElementsByClassName("search-game")[0];
+						txtValue = details.textContent || details.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) 
+						{
+							cards[i].style.display = "";
+						} 
+						else 
+						{
+							cards[i].style.display = "none";
+						}
+					}
+				}
+			</script>
+		</div>	
+	</div>
+
+
+
+
+	<!-- Heading 1 -->
+	<div class="w3-row-padding w3-center" style="margin-top: 15px; margin-left: 65px;">
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/1659420/UNCHARTED_Legacy_of_Thieves_Collection/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-1.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Uncharted<br>Legacy of Thieves Collection</p>
+						<p>Rs.3,299/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>Nathan Drake reunites with his brother Sam to search for the lost treasure of pirate Henry Avery. They face dangerous rivals and uncover secrets of the pirate colony Libertalia. Ultimately, Nathan chooses family and a peaceful life over fortune, retiring from treasure hunting.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/477160/Human_Fall_Flat/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-2.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Human Fall Flat</p>
+						<p>Rs.529/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It is a physics-based puzzle platformer where players control a wobbly, customizable character named Bob. The game features open-ended levels filled with puzzles that can be solved in a variety of ways using the environment and physics-based interactions. Its quirky gameplay, cooperative multiplayer, and comedic physics have made it a hit among players looking for lighthearted fun.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/1137300/Sherlock_Holmes_Chapter_One/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-3.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Sherlock Holmes<br>Chapter One</p>
+						<p>Rs.2,299/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It is an action-adventure game that serves as a prequel to the Sherlock Holmes series. Set in a fictional Mediterranean island, players control a young Sherlock Holmes as he embarks on his first major case. The game features a blend of detective work, exploration, and combat, allowing players to solve intricate cases and uncover secrets while developing Holmes' character and skills.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/1426210/It_Takes_Two/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-4.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>It Takes Two</p>
+						<p>Rs.659/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It Takes Two follows the story of Cody and May, a married couple on the brink of divorce who are magically transformed into tiny dolls. They must navigate a fantastical world filled with challenges and puzzles, working together to repair their fractured relationship and find their way back to their real bodies. The game combines cooperative gameplay with a heartwarming narrative about love, trust, and reconciliation.</p>
+				</div>
+			</a>
+		</div>
+	</div><br>
+
+
+
+
+	<!-- Heading 2 -->
+	<div class="w3-row-padding w3-center" style="margin-top: 15px; margin-left: 65px;">
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/515960/Martha_Is_Dead/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-5.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Martha is Dead</p>
+						<p>Rs.699/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p> Martha Is Dead is a psychological horror game set in Italy during World War II. It follows the story of a young woman, Giulia, who discovers her twin sister Martha's body drowned in a lake. As Giulia unravels the mystery surrounding her sister's death, she encounters disturbing supernatural elements and psychological trauma, blending real-world horror with a haunting narrative. The game delves into themes of grief, identity, and the impact of war on the human psyche.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/699130/World_War_Z/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-6.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>World War Z<br>Aftermath</p>
+						<p>Rs.1,499/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It is a cooperative third-person shooter where players battle hordes of zombies in a post-apocalyptic world. It builds on the original game with new missions, locations, and a refined melee combat system. The expansion focuses on teamwork and survival in an increasingly dire global crisis.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/2506160/Fears_to_Fathom__Ironbark_Lookout/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-7.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Fear to Fathom<br>Ironbark Lookout</p>
+						<p>Rs.480/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It is a psychological horror game set in a remote, eerie location. Players assume the role of a protagonist who is visiting a secluded lookout point surrounded by ominous woods. As the story unfolds, unsettling events and supernatural occurrences escalate, creating a tense atmosphere of suspense and dread. The game's narrative revolves around uncovering the dark secrets hidden in Ironbark Lookout while confronting your deepest fears.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/1098940/Home_Sweet_Home_EP2/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-8.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Home Sweet Home<br>Episode 2</p>
+						<p>Rs.549/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>The game is about stealth and hiding. If the ghosts or demons find the player in their hiding spot, the player can do a quick time event to escape, or will otherwise be killed and the game will respawn to the last save point. Exploration is also important, which is complemented by the fact that many areas have no dangers. Instead, the goal is to find diary pages, informative articles, or puzzle items.</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+
+
+
+
+	<!-- Heading 3 -->
+	<div class="w3-row-padding w3-center" style="margin-top: 15px; margin-left: 65px;">
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-9.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Resident Evil<br>Biohazard</p>
+						<p>Rs.1,199/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>In Resident Evil 7: Biohazard , players step into the shoes of Ethan Winters, who searches for his missing wife, Mia, in a derelict plantation mansion in Louisiana. The game introduces a first-person perspective, enhancing the immersive horror experience. Ethan encounters the deranged Baker family, revealing a sinister infection and dark secrets that drive the gripping narrative.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/207610/The_Walking_Dead/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-10.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>The Walking Dead</p>
+						<p>Rs.690/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>The Walking Dead game by Telltale Games centers on Clementine, a young girl trying to survive in a post-apocalyptic world overrun by zombies. Players control Lee Everett, a convicted criminal who becomes Clementine's protector and surrogate father. The game emphasizes narrative choices and character development, as players must navigate moral dilemmas and form alliances to ensure their survival and that of Clementine.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/1222700/A_Way_Out/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-11.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>A Way Out</p>
+						<p>Rs.1,499/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>A Way Out follows Leo and Vincent, two prisoners who form an unlikely alliance to escape from jail and seek revenge on those who wronged them. The game features a unique split-screen co-op gameplay, where players must work together to overcome obstacles, make decisions, and navigate the narrative's twists and turns. Their journey explores themes of friendship, trust, and betrayal as they strive to achieve freedom.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="w3-col s3 card2">
+			<a href="https://store.steampowered.com/app/12200/Bully_Scholarship_Edition/">
+				<!-- Card-View -->
+				<div class="mod2">
+					<!-- Image -->
+					<div class="margin-top">
+						<img class="image" src="images/pcgame/pc-12.jpg">
+					</div>
+					
+					<!-- Details -->
+					<div class="search-game">
+						<p>Bully<br>Scholarship Edition</p>
+						<p>Rs.274/-</p>
+					</div>
+				</div>
+
+				<!-- Story on Hover -->
+				<div class="details2">
+					<p class="w3-center"><b>Story</b></p>
+					<p>It is an open-world action-adventure game where players take on the role of Jimmy Hopkins, a teenager navigating life at Bullworth Academy. As Jimmy, you deal with bullies, teachers, and fellow students while participating in various school activities and missions. The game explores themes of rebellion, social hierarchy, and coming-of-age challenges in a humorous and often satirical manner.</p>
+				</div>
+			</a>
+		</div>
+	</div><br>	
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
+		<div class="w3-row w3-center">
+			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
+				<a href="#">Request us</a>
+			</div>
+
+			<div class="w3-col s9 m6">Follow us 
+				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
+				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
+				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
+				<a href="#" class="fa fa-pinterest w3-hover-red w3-round-large"></a>
+			</div>
+		</div>
+
+		<div class="w3-center" style="margin-top: 10px;">
+			Developed and Maintained by Alex | &#169;Copyright all rights reserved. <span id="year"></span>
+		</div>
+
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</footer>
+
+	<style>
+		/* Default font size and media icons for larger screens */
+		footer {font-size: 1rem;}
+		
+		footer .fa {font-size: 1.5rem; margin: 0 2px;}
+
+		/* Responsive font size for smaller screens */
+		@media (max-width: 768px) 
+		{
+			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
+		
+			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
+		}
+
+		@media (max-width: 480px) 
+		{
+			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
+
+			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
+		}
+	</style>
+
+</body>
+</html>

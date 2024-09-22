@@ -96,33 +96,38 @@
 		}
 	</script>
 
-	<!-- LOGIN ID-->
-	<div style="width: 500px; margin: 9% auto;">
-		<div class="w3-padding w3-card-4 w3-round-large" style="width: 100%; height: 300px; background-color: rgba(255, 255, 255, 0.8);">
+	<!-- login form-->
+	<div style="width: 75%; max-width: 500px; margin: 9% auto;">
+		<div class="w3-padding w3-round-large" style="width: 100%; background-color: rgba(255, 255, 255, 0.8);">
 			<form class="w3-text-black" onsubmit="alert('Welcome to the Arcadius')">
 
 				<h2 class="login-heading w3-center"><b>Login</b></h2>
 
-				<Label for="first">User id</Label>
-				<input type="text" id="first" placeholder="Enter here" class="w3-input" autocomplete="off" required="">
+				<Label for="first">User ID</Label>
+				<input type="text" id="first" placeholder="Enter here" class="w3-input w3-round" autocomplete="off" required="">
 
 				<Label for="pwd">Password</Label>
-				<input type="password" id="pwd" placeholder="Enter the password" class="w3-input" autocomplete="off" required=""><br>
+				<input type="password" id="pwd" placeholder="Enter the password" class="w3-input w3-round" autocomplete="off" required=""><br>
 
-				<button type="submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Submit</button>
-				<button type="submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1"><a href="signup.html">Sign Up</a></button>
+				<div style="text-align: center;">
+					<button type="submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Submit</button>
+					<button type="submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1"><a href="signup.html">Sign Up</a></button>
+				</div>
 			</form>
 		</div>
 	</div>
+
+	
+
 	
 	<!-- Footer -->
 	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
 		<div class="w3-row w3-center">
-			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
+			<div class="w3-col s12 m6 w3-hover-text-red" style="margin-top: 5px;">
 				<a href="#">Request us</a>
 			</div>
 
-			<div class="w3-col s9 m6">Follow us 
+			<div class="w3-col s12 m6">Follow us 
 				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
 				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
 				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
@@ -138,28 +143,6 @@
 			document.getElementById('year').textContent = new Date().getFullYear();
 		</script>
 	</footer>
-
-	<style>
-		/* Default font size and media icons for larger screens */
-		footer {font-size: 1rem;}
-		
-		footer .fa {font-size: 1.5rem; margin: 0 2px;}
-
-		/* Responsive font size for smaller screens */
-		@media (max-width: 768px) 
-		{
-			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
-		
-			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
-		}
-
-		@media (max-width: 480px) 
-		{
-			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
-
-			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
-		}
-	</style>
 	
 </body>
 </html>

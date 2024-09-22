@@ -98,37 +98,42 @@
 
 
 	<!-- sign up form -->
-	<div class="" style="width: 600px; margin: auto; margin-top: 40px; margin-bottom: 40px; ">
-	<div class="" style="width: 100%; padding: 50px;">
-		<form class="w3-card-4 w3-round-large form-font" onsubmit="alert('Thank You for Creating Account. Your User Id and Password will be Send to your email')" style="background-color: rgba(255, 255, 255, 0.8);  padding: 10px 20px;">
+	<div style="width: 95%; max-width: 600px; margin: auto; margin-top: 30px; margin-bottom: 30px;">
+		<div class="" style=" padding: 50px;">
+			<form class="w3-card-4 w3-round-large form-font" onsubmit="alert('Thank You for Creating Account. Your User Id and Password will be Send to your email')" style="background-color: rgba(255, 255, 255, 0.8);  padding: 10px 20px;">
 
-			<h2 class="sign-up-heading w3-center"><b>Sign Up</b></h2>
-			<Label for="first">First Name</Label>
-			<input type="text" id="first" placeholder="Enter first name" class="w3-input" minlength="3" autocomplete="off" required="">
+				<h2 class="sign-up-heading w3-center"><b>Sign Up</b></h2>
+				<Label for="first">First Name</Label>
+				<input type="text" id="first" placeholder="Enter first name" class="w3-input w3-round" minlength="3" autocomplete="off" required="">
 
-			<Label for="last">Last Name</Label>
-			<input type="text" id="last" placeholder="Enter last name" class="w3-input" minlength="3" autocomplete="off" required="">
+				<Label for="last">Last Name</Label>
+				<input type="text" id="last" placeholder="Enter last name" class="w3-input w3-round" minlength="3" autocomplete="off" required="">
 
-			<Label for="display">Display Username</Label>
-			<input type="text" id="display" placeholder="Enter here" class="w3-input" autocomplete="off" required="">
+				<Label for="display">Display Username</Label>
+				<input type="text" id="display" placeholder="Enter here" class="w3-input w3-round" autocomplete="off" required="">
 
-			<Label for="age">Age</Label>
-			<input type="number" id="age" class="w3-input" placeholder="Enter the age" min="18" max="30" autocomplete="off" required="">
+				<Label for="age">Age</Label>
+				<input type="number" id="age" class="w3-input w3-round" placeholder="Enter the age" min="18" max="30" autocomplete="off" required="">
+				
+				<Label for="email">Email ID</Label>
+				<input type="email" id="email" placeholder="Enter your email" class="w3-input w3-round" autocomplete="off" required="">
+
+				<Label for="country">Country</Label>
+				<input type="text" id="country" placeholder="Enter here" class="w3-input w3-round" autocomplete="off" required="">
+
+				<Label for="pswd">Create new password</Label>
+				<input type="password" id="pswd" placeholder="Enter new password" class="w3-input w3-round" autocomplete="off" required=""><br>
 			
-			<Label for="email">Email ID</Label>
-			<input type="email" id="email" placeholder="Enter your email" class="w3-input" autocomplete="off" required="">
-
-			<Label for="country">Country</Label>
-			<input type="text" id="country" placeholder="Enter here" class="w3-input" autocomplete="off" required="">
-
-			<Label for="pswd">Create new password</Label>
-			<input type="password" id="pswd" placeholder="Enter new password" class="w3-input" autocomplete="off" required=""><br>
-		
-			<button type="Submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Submit</button>
-			<button type="Reset" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Reset</button>
-		</form>
+				<div style="text-align: center;">
+					<button type="Submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Submit</button>
+					<button type="Reset" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified-1">Reset</button>
+				</div>
+			</form>
+		</div>
 	</div>
-</div>
+
+
+	
 
 	<!-- Footer -->
 	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
@@ -154,27 +159,6 @@
 		</script>
 	</footer>
 
-	<style>
-		/* Default font size and media icons for larger screens */
-		footer {font-size: 1rem;}
-		
-		footer .fa {font-size: 1.5rem; margin: 0 2px;}
-
-		/* Responsive font size for smaller screens */
-		@media (max-width: 768px) 
-		{
-			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
-		
-			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
-		}
-
-		@media (max-width: 480px) 
-		{
-			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
-
-			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
-		}
-	</style>
 
 </body>
 </html>				

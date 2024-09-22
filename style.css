@@ -19,6 +19,29 @@
 	.mod2{border: 2px solid lightgrey; border-radius: 10px; width: 280px ; height: 420px; background-color: rgba(0, 0, 0, 0.888);}
 
 
+	/* footer code */
+	
+	/* Default font size and media icons for larger screens */
+	footer {font-size: 1rem;}
+		
+	footer .fa {font-size: 1.5rem; margin: 0 2px;}
+
+	/* Responsive font size for smaller screens */
+	@media (max-width: 768px) 
+	{
+		footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
+	
+		footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
+	}
+
+	@media (max-width: 480px) 
+	{
+		footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
+
+		footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
+	}
+
+
 
 	
 /*home page*/
@@ -64,34 +87,6 @@
 		padding: 0px 10px;
 		background: rgba(0, 0, 0, 0.9);
 		transition: 0.4s ease;}
-
-
-
-
-
-/* playstation */
-
-	/* .image-2{width: 280px; height: 380px; border-radius: 8px; border: 2px solid white;} */
-	
-	/* .card {	overflow: hidden;
-		position: relative;
-		cursor: pointer;
-		border-radius: 20px;}		
-
-	.card:hover .details{opacity: 1; height: 100%;}
-
-	.details{color: white;
-		position: absolute;
-		left: 0;
-		bottom:0;
-		width: 100%;
-		height: 0;
-		opacity: 0;
-		background: rgba(0, 0, 0, 0.9) ;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: 0.5s ease;} */
 	
 
 
@@ -161,6 +156,55 @@
 		box-shadow: 0 0 15px 0 #ff1493;
 	}
 
+	/* Contact Form Container */
+    .contact-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 45px auto;
+    }
+
+    .contact-box {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Submit button container */
+    .submit-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) 
+	{
+        .contact-container {
+            margin: 20px auto;
+            width: 75%; /* Adjust width for small screens */
+        }
+
+        .contact-box {
+            padding: 10px;
+        }
+
+        .w3-input {
+            font-size: 12px; /* Smaller input text */
+        }
+
+        textarea {
+            height: auto; /* Allow textarea to expand based on content */
+        }
+
+        .button-modified {
+            font-size: 12px; /* Reduce button font size */
+        }
+
+        .submit-button-container {
+            margin-left: 0;
+        }
+    }
+
 
 
 
@@ -172,10 +216,10 @@
 
 	.body8{	background-image: url("images/background/bg8.jpg");
 			background-attachment: fixed;
-			background-size: cover;}	
+			background-size: cover;}
 
 
-
+			
 
 /*login page*/
 
@@ -184,6 +228,28 @@
 	.body9{	background-image: url("images/background/bg9.jpg");
 			background-attachment: fixed;
 			background-size: cover;}
+
+	@media screen and (max-width: 600px) 
+	{
+		.w3-padding {
+					padding: 10px;
+				}
+			
+		input.w3-input {
+					font-size: 12px;
+					padding: 8px;
+				}
+			
+		.login-heading {
+					font-size: 22px;
+				}
+			
+		.button-modified-1 {
+					font-size: 12px;
+					padding: 8px 12px;
+				}
+	}
+
 
 
 
@@ -220,3 +286,15 @@
 		color: white;
 		text-align: center;
 	}
+
+
+	@media screen and (max-width: 600px) 
+	{
+	
+		.sign-up-heading {
+			font-size: 1.6rem;
+		}
+	
+
+	}
+	

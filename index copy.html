@@ -22,6 +22,53 @@
 	<!-- css link -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<style>
+		/* Ensure the images and cards adjust their sizes dynamically */
+		.card-container {
+			padding: 10px;
+		}
+	
+		.card-container img {
+			width: 100%;
+			height: auto;
+		}
+	
+		/* Custom styles for small screens (600px and below) */
+		@media screen and (max-width: 600px) {
+			.w3-col.s12.m6 {
+				width: 50% !important;
+			}
+	
+			.card-container {
+				padding: 5px; /* Reduce padding on small screens */
+			}
+	
+			.card-container img {
+				width: 90%; /* Make the images smaller on small screens */
+				margin: auto; /* Center the image */
+			}
+	
+			.card-container p {
+				font-size: 14px; /* Reduce font size on small screens */
+			}
+		}
+	
+		/* Custom styles for medium screens (600px to 992px) */
+		@media screen and (min-width: 601px) and (max-width: 992px) {
+			.card-container {
+				padding: 8px;
+			}
+	
+			.card-container img {
+				width: 95%; /* Slightly smaller images on medium screens */
+			}
+	
+			.card-container p {
+				font-size: 16px;
+			}
+		}
+	</style>
+	
 </head>
 <body>
 
@@ -100,12 +147,12 @@
 
 
 	<!-- SlideShow -->
-	<section>
+	<section class="slideshow-container">
 
 		<div class="slide-container">
 			<img class="myslides mod1" src="images/imageslide/slide-1.jpg">
 		</div>
-	
+
 		<div class="slide-container">
 			<img class="myslides mod1" src="images/imageslide/slide-2.jpg">
 		</div>
@@ -157,123 +204,124 @@
 		var myIndex = 0;
 		slides();
 
-		function slides()
-		{
+		function slides() {
 			var i;
 			var x = document.getElementsByClassName("myslides");
-
-			for (i = 0; i < x.length; i++) 
-			{
+			for (i = 0; i < x.length; i++) {
 				x[i].classList.remove("active");
 			}
-
-			// Move to the next slide
 			myIndex++;
-			if (myIndex > x.length) 
-			{
-				myIndex = 1
-			} 
-
-			// Show the current slide with a fade-in effect
-			x[myIndex-1].classList.add("active"); 
-
-			// Set the timeout for the next slide change
+			if (myIndex > x.length) {
+				myIndex = 1;
+			}
+			x[myIndex-1].classList.add("active");
 			setTimeout(slides, 3000); // Change image every 3 seconds
 		}
 	</script>
+
+
+
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-	<div class="w3-row-padding" style="margin-top: 5px;">
-		<!-- Genres Section -->
-		<div class="w3-col s12 m2 l2 w3-ul w3-large w3-round-large" style="font-weight: 600; background-color: rgba(84, 158, 205, 0.692); height: auto; padding: 10px; margin-bottom: 10px;">
-			<h3 class="w3-center w3-hide-small" style="font-weight: 700;">Genres</h3>
-		
-			<!-- Hamburger Menu for Small Screens -->
-			<div class="w3-hide-large w3-hide-medium">
-				<button class="w3-hover-text-white" style="font-weight: 700; background-color: rgba(84, 159, 205, 0.078); border: none;" onclick="toggleGenres()">☰ Genres</button>
-			</div>
 	
-			 <!-- Genres List -->
-			 <ul id="genres-list" class="w3-ul w3-hide-small w3-hide-medium" style="line-height: 40px;">
-				<a href="https://store.epicgames.com/en-US/c/action-games?sortBy=releaseDate&sortDir=DESC&count=40">
-					<li class="w3-hover-text-red">Action</li></a>
-		
-				<a href="https://store.steampowered.com/tags/en/Adventure/">
-					<li class="w3-hover-text-red">Adventure</li></a>
-		
-				<a href="https://store.steampowered.com/category/arcade_rhythm/">
-					<li class="w3-hover-text-red">Arcade & Rhythm</li></a>
-		
-				<a href="https://store.steampowered.com/category/action_fps/">
-					<li class="w3-hover-text-red">First Person</li></a>
-		
-				<a href="https://store.steampowered.com/category/horror/">
-					<li class="w3-hover-text-red">Horror</li></a>
-		
-				<a href="https://store.steampowered.com/category/mystery_detective/">
-					<li class="w3-hover-text-red">Mystery & Detective</li></a>
-		
-				<a href="https://store.steampowered.com/category/racing/">
-					<li class="w3-hover-text-red">Racing</li></a>
-		
-				<a href="https://store.steampowered.com/category/rpg/">
-					<li class="w3-hover-text-red">Role Playing</li></a>
-		
-				<a href="https://store.epicgames.com/en-US/c/shooter-games?sortBy=releaseDate&sortDir=DESC&count=40">
-					<li class="w3-hover-text-red">Shooting</li></a>
-		
-				<a href="https://store.steampowered.com/category/simulation/">
-					<li class="w3-hover-text-red">Simulation</li></a>
-		
-				<a href="https://store.steampowered.com/category/survival/">
-					<li class="w3-hover-text-red">Survival</li></a>
-		
-				<a href="https://store.steampowered.com/category/rpg_strategy_tactics/">
-					<li class="w3-hover-text-red">Strategy & Tactical</li></a>
-		
-				<a href="https://store.steampowered.com/tags/de/Thriller/">
-					<li class="w3-hover-text-red">Thriller</li></a>
-			</ul>
-		</div>
 
-		<!-- JavaScript to Toggle Genres Menu -->
-		<script>
-			function toggleGenres() 
-			{
-				var genresList = document.getElementById('genres-list');
 
-				if (genresList.classList.contains('w3-hide-small')) 
-				{
-					genresList.classList.remove('w3-hide-small');
-				} 
-				else 
-				{
-					genresList.classList.add('w3-hide-small');
-				}
-			}
-		</script>
+	<div class="w3-row-padding" style="margin-top: 5px;">
+		
+	<!-- Genres Section -->
+	<div class="w3-col s12 m2 l2 w3-ul w3-large w3-round-large" style="font-weight: 600; background-color: rgba(84, 158, 205, 0.692); height: auto; padding: 10px;">
+    <h3 class="w3-center w3-hide-small" style="font-weight: 700;">Genres</h3>
 
+    <!-- Hamburger Menu for Small Screens -->
+    <div class="w3-hide-large w3-hide-medium">
+        <button class="w3-hover-text-red" style="font-weight: 700; background-color: rgba(84, 159, 205, 0.078); border: none;" onclick="toggleGenres()">☰ Genres</button>
+    </div>
+
+    <!-- Genres List -->
+    <ul id="genres-list" class="w3-ul w3-hide-small w3-hide-medium">
+        <a href="https://store.epicgames.com/en-US/c/action-games?sortBy=releaseDate&sortDir=DESC&count=40">
+            <li class="w3-hover-text-red">Action</li></a>
+
+        <a href="https://store.steampowered.com/tags/en/Adventure/">
+            <li class="w3-hover-text-red">Adventure</li></a>
+
+        <a href="https://store.steampowered.com/category/arcade_rhythm/">
+            <li class="w3-hover-text-red">Arcade & Rhythm</li></a>
+
+        <a href="https://store.steampowered.com/category/action_fps/">
+            <li class="w3-hover-text-red">First Person</li></a>
+
+        <a href="https://store.steampowered.com/category/horror/">
+            <li class="w3-hover-text-red">Horror</li></a>
+
+        <a href="https://store.steampowered.com/category/mystery_detective/">
+            <li class="w3-hover-text-red">Mystery & Detective</li></a>
+
+        <a href="https://store.steampowered.com/category/racing/">
+            <li class="w3-hover-text-red">Racing</li></a>
+
+        <a href="https://store.steampowered.com/category/rpg/">
+            <li class="w3-hover-text-red">Role Playing</li></a>
+
+        <a href="https://store.epicgames.com/en-US/c/shooter-games?sortBy=releaseDate&sortDir=DESC&count=40">
+            <li class="w3-hover-text-red">Shooting</li></a>
+
+        <a href="https://store.steampowered.com/category/simulation/">
+            <li class="w3-hover-text-red">Simulation</li></a>
+
+        <a href="https://store.steampowered.com/category/survival/">
+            <li class="w3-hover-text-red">Survival</li></a>
+
+        <a href="https://store.steampowered.com/category/rpg_strategy_tactics/">
+            <li class="w3-hover-text-red">Strategy & Tactical</li></a>
+
+        <a href="https://store.steampowered.com/tags/de/Thriller/">
+            <li class="w3-hover-text-red">Thriller</li></a>
+    </ul>
+</div>
+
+<!-- JavaScript to Toggle Genres Menu -->
+<script>
+    function toggleGenres() 
+	{
+        var genresList = document.getElementById('genres-list');
+
+        if (genresList.classList.contains('w3-hide-small')) 
+		{
+            genresList.classList.remove('w3-hide-small');
+        } 
+		else 
+		{
+            genresList.classList.add('w3-hide-small');
+        }
+    }
+</script>
+
+
+		
 
 
 
 
 		<!-- Right Content -->
-		<div class="w3-col s12 m10 l10" style="margin-top: -10px;">
-
+		<div class="w3-col s12 m10" style="margin-top: -10px;">
 			<!-- Row 1 -->
-			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "right">New Releases</marquee></h2>
+			<h2 class="Head1 w3-bar w3-text-white w3-center">
+				<marquee direction="right">New Releases</marquee>
+			</h2>
+			
 			<div class="w3-row-padding w3-center">
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s12 m6 l3">
 					<a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/">
-						<div class="hover mod2">
+						<div class="hover mod2 card-container">
 							<div class="margin-top">
 								<img class="image" src="images/new-1.jpg">
 							</div>
-
+			
 							<div>
 								<p>Black Myth Wukong</p>
 								<p>Rs.3,599/-</p>
@@ -281,14 +329,14 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+			
+				<div class="w3-col s12 m6 l3">
 					<a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/">
-						<div class="hover mod2">
+						<div class="hover mod2 card-container">
 							<div class="margin-top">
 								<img class="image" src="images/new-2.jpg">
 							</div>
-
+			
 							<div>
 								<p class="w3-text-white">Hogwarts Legacy</p>
 								<p class="w3-text-white">Rs.3,999/-</p>
@@ -296,10 +344,10 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+			
+				<div class="w3-col s12 m6 l3">
 					<a href="https://store.steampowered.com/app/1601580/Frostpunk_2/">
-						<div class="hover mod2">
+						<div class="hover mod2 card-container">
 							<div class="margin-top">
 								<img class="image" src="images/new-3.jpg">
 							</div>
@@ -310,14 +358,14 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+			
+				<div class="w3-col s12 m6 l3">
 					<a href="https://store.steampowered.com/app/2878980/NBA_2K25/">
-						<div class="hover mod2">
+						<div class="hover mod2 card-container">
 							<div class="margin-top">
 								<img class="image" src="images/new-4.jpg">
 							</div>
-
+			
 							<div>
 								<p class="w3-text-white">NBA 2K25</p>
 								<p class="w3-text-white">Rs.3,999/-</p>
@@ -326,15 +374,18 @@
 					</a>
 				</div>
 			</div>
+			
+			
+			
 
 
 
 
 			<!-- Row 2 -->
 			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "left">Award Winning</marquee></h2>
-			<div class="w3-row-padding w3-center">
+			<div class="w3-row w3-center">
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -349,7 +400,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://www.playstation.com/en-in/games/uncharted-the-lost-legacy/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -364,7 +415,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -379,7 +430,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -400,8 +451,8 @@
 
 			<!-- Row 3 -->
 			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "right">Special Offers</marquee></h2>
-			<div class="w3-row-padding w3-center">
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+			<div class="w3-row w3-center">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1238810/Battlefield_V/">
 						<div class="hover w3-black mod2">
 							<div class="margin-top">
@@ -416,7 +467,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1260320/Party_Animals/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -431,7 +482,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/526870/Satisfactory/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -446,7 +497,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1364780/Street_Fighter_6/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -467,8 +518,8 @@
 
 			<!-- Row 4 -->
 			<h2 class="Head1 w3-bar w3-text-white w3-center"><marquee direction= "left">Free to Play</marquee></h2>
-			<div class="w3-row-padding w3-center">
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+			<div class="w3-row w3-center">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/230410/Warframe/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -482,7 +533,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -496,7 +547,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1172470/Apex_Legends/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -510,7 +561,7 @@
 					</a>
 				</div>
 
-				<div class="w3-col s12 m6 l3" style="margin-bottom: 10px;">
+				<div class="w3-col s3">
 					<a href="https://store.steampowered.com/app/1992850/Cyrahs_Ascent/">
 						<div class="hover mod2">
 							<div class="margin-top">
@@ -527,18 +578,14 @@
 		</div>
 	</div>
 		
-
-
-
-
 	<!-- Footer -->
 	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
 		<div class="w3-row w3-center">
-			<div class="w3-col s12 m6 w3-hover-text-red" style="margin-top: 5px;">
+			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
 				<a href="#">Request us</a>
 			</div>
 
-			<div class="w3-col s12 m6">Follow us 
+			<div class="w3-col s9 m6">Follow us 
 				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
 				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
 				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
@@ -555,6 +602,27 @@
 		</script>
 	</footer>
 
+	<style>
+		/* Default font size and media icons for larger screens */
+		footer {font-size: 1rem;}
+		
+		footer .fa {font-size: 1.5rem; margin: 0 2px;}
+
+		/* Responsive font size for smaller screens */
+		@media (max-width: 768px) 
+		{
+			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
+		
+			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
+		}
+
+		@media (max-width: 480px) 
+		{
+			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
+
+			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
+		}
+	</style>
 	
 </body>
 </html>

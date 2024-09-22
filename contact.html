@@ -22,6 +22,11 @@
 	<!-- css link -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<!-- CSS Styles -->
+<style>
+    
+</style>
+
 </head>
 <body>
 
@@ -98,41 +103,45 @@
 
 
 	<!-- Contact Details -->
-	<div style="width: 600px; height: 484px; margin: 45px auto;">
-		<div class="w3-round-large w3-padding" style="width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8);">
-			<form class="form-font" onsubmit="alert('Thanks for contact us. We will resolve your query as soon as possible.')">
+	<div class="contact-container">
+		<div class="w3-round-large w3-padding contact-box">
+			<form class="form-font" onsubmit="alert('Thanks for contacting us. We will resolve your query as soon as possible.')">
 				<h2 class="contact-heading w3-center"><b>Contact Us</b></h2>
 
-				<Label for="first">First Name</Label>
-				<input type="text" id="first" placeholder="Enter first name" class="w3-input" minlength="3" autocomplete="off" required=""/>
+				<label for="first">First Name</label>
+				<input type="text" id="first" placeholder="Enter first name" class="w3-input w3-round" minlength="3" autocomplete="off" required=""/>
 
-				<Label for="last">Last Name</Label>
-				<input type="text" id="last" placeholder="Enter last name" class="w3-input" minlength="3" autocomplete="off" required=""/>
+				<label for="last">Last Name</label>
+				<input type="text" id="last" placeholder="Enter last name" class="w3-input w3-round" minlength="3" autocomplete="off" required=""/>
 
-				<Label for="email">Email ID</Label>
-				<input type="email" id="email" placeholder="Enter here" class="w3-input" autocomplete="off" required=""/>
+				<label for="email">Email ID</label>
+				<input type="email" id="email" placeholder="Enter here" class="w3-input w3-round" autocomplete="off" required=""/>
 
-				<Label for="mobile">Mobile Number</Label>
-				<input type="number" id="mobile" placeholder="Enter your number" class="w3-input" autocomplete="off" required=""/>
+				<label for="mobile">Mobile Number</label>
+				<input type="number" id="mobile" placeholder="Enter your number" class="w3-input w3-round" autocomplete="off" required=""/>
 
 				<label for="query">Query</label>
-				<textarea id="query" placeholder="Enter your queries" class="w3-input" minlength="50" maxlength="100" autocomplete="off" rows="1" required></textarea>
+				<textarea id="query" placeholder="Enter your queries" class="w3-input w3-round" minlength="50" maxlength="100" autocomplete="off" rows="1" required></textarea>
 				
-				<div style="margin-left: 39%;">
+				<div class="submit-button-container">
 					<button type="submit" class="w3-blue w3-button w3-hover-white w3-hover-text-blue w3-round-large button-modified">Submit</button>
 				</div>
 			</form>
 		</div>
 	</div>
 
+
+
+
+
 	<!-- Footer -->
 	<footer class="w3-bar w3-black" style="margin-top: 10px; padding-top: 10px;">
 		<div class="w3-row w3-center">
-			<div class="w3-col s3 m6 w3-hover-text-red" style="margin-top: 5px;">
+			<div class="w3-col s12 m6 w3-hover-text-red" style="margin-top: 5px;">
 				<a href="#">Request us</a>
 			</div>
 
-			<div class="w3-col s9 m6">Follow us 
+			<div class="w3-col s12 m6">Follow us 
 				<a href="#" class="fa fa-youtube w3-hover-red w3-round-large"></a>
 				<a href="#" class="fa fa-facebook w3-hover-blue w3-round-large"></a>
 				<a href="#" class="fa fa-instagram w3-hover-pink w3-round-large"></a>
@@ -148,28 +157,6 @@
 			document.getElementById('year').textContent = new Date().getFullYear();
 		</script>
 	</footer>
-
-	<style>
-		/* Default font size and media icons for larger screens */
-		footer {font-size: 1rem;}
-		
-		footer .fa {font-size: 1.5rem; margin: 0 2px;}
-
-		/* Responsive font size for smaller screens */
-		@media (max-width: 768px) 
-		{
-			footer {font-size: 0.9rem; } /* Slightly smaller text for medium screens */
-		
-			footer .fa {font-size: 1.3rem;} /* Decrease icon size for medium screens */
-		}
-
-		@media (max-width: 480px) 
-		{
-			footer {font-size: 0.8rem;} /* Smaller text for small mobile devices */
-
-			footer .fa {font-size: 1.1rem;}/* Decrease icon size further for small screens */
-		}
-	</style>
 	
 </body>
 </html>

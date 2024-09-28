@@ -46,7 +46,7 @@
 	
 /*home page*/
 
-	h2.Head1{text-shadow: 2px 2px red; font-family: cursive; font-weight: 600; background-color: rgba(0, 0, 0, 0.89); border-radius: 10px;}
+	h2.Head1{text-shadow: 2px 2px red; font-family: cursive; font-weight: 600; background-color: rgba(0, 0, 0, 0.89);}
 
 	.margin-top{ margin-top: 25px;}
 
@@ -54,14 +54,26 @@
 
 	.myslides {
 		position: absolute;
-		padding: 12px;
-		border-radius: 20px;
 		opacity: 0;  /* Start as transparent */
 		transition: opacity 1s ease; /* Smooth fade effect */
 	}
 	
 	.myslides.active {
 		opacity: 1;  /* Fade in */
+	}
+
+	/* Full screen - Apply when screen width is larger (desktops and larger devices) */
+	@media screen and (min-width: 601px) 
+	{
+		.responsive-slide {margin-bottom: 610px;}
+	}
+
+	/* Small screens - Apply when screen width is 600px or smaller (mobiles, tablets, etc.) */
+	@media screen and (max-width: 600px) 
+	{
+		.myslides.mod1 {max-width: 100%; max-height: 300px;}
+
+		.responsive-slide {margin-bottom: 300px;}
 	}
 
 
@@ -87,6 +99,25 @@
 		padding: 0px 10px;
 		background: rgba(0, 0, 0, 0.9);
 		transition: 0.4s ease;}
+
+	/* Full screen - Apply when screen width is larger (desktops and larger devices) */
+	@media screen and (min-width: 601px) 
+	{
+		.responsive-slide-2 {margin-bottom: 500px;}
+	}
+
+	/* Small screens - Apply when screen width is 600px or smaller (mobiles, tablets, etc.) */
+	@media screen and (max-width: 600px) 
+	{
+		.myslides.adjust_image {max-width: 100%; max-height: 300px;}
+
+		.responsive-slide-2 {margin-bottom: 300px;}
+	}
+
+
+/* playstation */
+
+
 	
 
 
